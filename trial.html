@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: turquoise;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+        
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        #Submit {
+            border: 1;
+            outline: 0;
+            background: none;
+            color: white;
+            font: 15px existence;
+            cursor: pointer;
+            transition: color 300ms;
+        }
+        
+        #Submit:hover,
+        #Submit:focus {
+            color: #eb2929;
+        }
+        
+        #Reset {
+            border: 1;
+            outline: 0;
+            background: none;
+            color: white;
+            font: 15px existence;
+            cursor: pointer;
+            transition: color 300ms;
+        }
+        
+        #Reset:hover,
+        #Reset:focus {
+            color: #eb2929;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Employee Details</h1>
+    <br>
+    <br>
+    <form action="details.php" method="POST">
+        <label>Name : </label> <input type="text" placeholder="Enter your name here" name="name" /> <br/><br/>
+        <label>Age : </label> <input type="number" placeholder="Enter your age here" name="age" /> <br/><br/>
+        <label>Phone Number : </label> <input type="phone" placeholder="Enter your number here" name="phoneNumber" /> <br/><br/>
+        <label>Employee ID : </label> <input type="text" placeholder="Enter your ID here" name="employeeId" /> <br/><br/>
+        <label>Salary : </label> <input type="number" placeholder="Enter your Salary here" name="salary" /> <br/><br/>
+
+
+        <p>
+            <input id="Submit" name="save" type="submit" value="Submit" onclick="clickSubmit()" />
+            <input id="Reset" type="reset" value="Reset" onclick="clickReset()" />
+        </p>
+        <script>
+            function clickSubmit() {
+                alert('Information Submitted')
+            }
+        </script>
+    </form>
+
+</body>
+
+
+
+</html>
