@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        * {
+            padding: 10;
+            margin: 5;
+        }
+        
+        body {
+            background: #3cd2fc;
+        }
+        
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        #Submit {
+            border: 1;
+            outline: 0;
+            background: none;
+            color: white;
+            font: 15px existence;
+            cursor: pointer;
+            transition: color 300ms;
+        }
+        
+        #Submit:hover,
+        #Submit:focus {
+            color: #eb2929;
+        }
+        
+        #Reset {
+            border: 1;
+            outline: 0;
+            background: none;
+            color: white;
+            font: 15px existence;
+            cursor: pointer;
+            transition: color 300ms;
+        }
+        
+        #Reset:hover,
+        #Reset:focus {
+            color: #eb2929;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Employee Details</h1>
+    <br>
+    <br>
+    <form name="EmpDet" method="post">
+        <label>Name : </label> <input type="text" name="Name" size="15" /> <br/><br/>
+        <label>Age : </label> <input type="number" name="Age" size="3" /> <br/><br/>
+        <label>Phone Number : </label> <input type="number" name="Phone Number" size="10" /> <br/><br/>
+        <label>Employee ID : </label> <input type="number" name="Employee ID" size="15" /> <br/><br/>
+        <label>Salary : </label> <input type="number" name="Salary" size="20" /> <br/><br/>
+
+
+        <p>
+            <input id="Submit" type="submit" value="Submit" />
+            <input id="Reset" type="reset" value="Reset" />
+        </p>
+    </form>
+
+</body>
+
+<script src="javascript.js"></script>
+
+</html>
